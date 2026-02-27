@@ -1,0 +1,22 @@
+firebase:
+  project_id: "aatr-system"
+  credentials_path: "./firebase-credentials.json"
+
+trading:
+  max_position_size: 0.1  # 10% of portfolio
+  max_daily_loss: 0.05    # 5% max daily loss
+  commission_rate: 0.001  # 0.1% per trade
+
+backtesting:
+  initial_capital: 100000
+  start_date: "2023-01-01"
+  end_date: "2023-12-31"
+
+rl_training:
+  total_timesteps: 100000
+  learning_rate: 0.0003
+  batch_size: 64
+
+logging:
+  level: "INFO"
+  file_path: "./logs/aatr_system.log"
